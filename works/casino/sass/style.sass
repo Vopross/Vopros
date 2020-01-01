@@ -1,0 +1,453 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700)
+
+body
+  margin: 0
+  background: linear-gradient(to top, #030303, #131313)
+  display: flex
+  font-size: 16px
+  font-family: 'Ubuntu'
+  max-width: 1920px
+  min-width: 1280px
+  height: 1080px
+  flex-direction: column
+  flex-wrap: wrap
+
+div, header, footer
+  display: flex
+
+header
+  margin-top: 25px
+  margin-left: 35px
+
+.quit
+  color: #fff
+  color: #757575
+  cursor: pointer
+  opacity: 0.8
+  svg
+    fill: #757575
+    width: 21px
+    height: 25px
+  span
+    margin-top: 3px
+    margin-left: 10px
+  &:hover
+    opacity: 1
+
+.rounds
+  width: 528px
+  // min-width: 352px
+  height: 389px
+  // min-height: 259px
+  background: linear-gradient(to top, #1b1b1b, #2c2c2c)
+  margin-top: 6px
+  border-radius: 5px
+  margin-right: 6px
+  flex-wrap: wrap
+  svg
+    margin-top: 9px
+    margin-left: 2px
+    width: 21px
+    height: 25px
+    cursor: pointer
+
+.rounds-list
+  margin-top: 15px
+  margin-left: 6px
+  margin-right: 6px
+  flex-direction: column
+  width: 91%
+  color: #ffffff
+  font-size: 13px
+
+.rounds-column
+  justify-content: space-around
+  margin-bottom: 9px
+  div
+    width: 0px
+    justify-content: center
+    z-index: 2
+
+.rounds-border
+  margin-bottom: 9.5px
+  border-bottom: 1px solid #414141
+  margin-left: 12px
+  margin-right: 14px
+
+.rounds-sign
+  position: relative
+  &:before
+    content: ""
+    left: -18px
+    top: -5px
+    position: absolute
+    width: 34px
+    height: 22px
+    border: 1px solid #636363
+    border-radius: 8px
+
+.rounds-sign-green
+  position: relative
+  &:before
+    z-index: -1
+    content: ""
+    left: -18px
+    top: -5px
+    position: absolute
+    width: 34px
+    height: 22px
+    border: 1px solid #02ac3e
+    background: #02ac3e
+    border-radius: 8px
+
+.rounds-pages
+  color: #7b7b7b
+  margin-left: 22px
+  font-size: 13px
+  input
+    display: none
+  label
+    width: 7px
+    height: 7px
+    border-radius: 50%
+    border: 1px solid #7b7b7b
+    background: #7b7b7b
+    margin-left: 11px
+    margin-top: 4px
+    cursor: pointer
+  span
+    margin-right: 19px
+  input:checked + label
+    background: #ffffff
+    cursor: default
+
+.chat
+  width: 387px
+  // min-width: 257px
+  height: 389px
+  // min-height: 259px
+  background: linear-gradient(to top, #1b1b1b, #2c2c2c)
+  margin-top: 6px
+  border-radius: 5px
+  flex-direction: column
+  margin-right: 6px
+  svg
+    width: 28px
+    margin-top: 4px
+    margin-right: 2px
+
+.svg-titles
+  color: #00b33f
+  margin-left: 9px
+  margin-right: 9px
+  align-items: center
+  justify-content: center
+  height: 40px
+  border-bottom: 1px solid #414141
+  span
+    margin-left: 7px
+  svg
+    margin-left: auto
+    cursor: pointer
+
+.chat-window
+  font-size: 19px
+  color: #ffffff
+  flex-direction: column
+  margin-left: 17px
+  margin-top: 24px
+  line-height: 120%
+  div
+    span:first-of-type
+      color: #00ace4
+    span:last-of-type
+      font-size: 16px
+      margin-left: 30px
+      margin-top: 3px
+
+.chat-second-user
+  margin-top: 20px
+  span:first-of-type
+    color: #fbf064 !important
+  span:last-of-type
+    margin-left: 21px !important
+
+.chat-input
+  margin-top: auto
+  width: 100%
+  height: 42px
+  background: #353535
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+  input
+    margin-left: 17px
+    width: 85%
+    background: none
+    border: none
+    outline: none
+    font-size: 19px
+    color: #ffffff
+  svg
+    margin-top: 3px
+    margin-left: 4px
+    cursor: pointer
+    fill: #fff
+    opacity: 0.8
+    width: 25px !important
+    &:hover
+      opacity: 1
+
+.settings
+  margin-right: 32px
+  margin-top: 6px
+  width: 257px
+  height: 389px
+  background: linear-gradient(to top, #1b1b1b, #2c2c2c)
+  border-radius: 5px
+  flex-direction: column
+  svg
+    width: 24px
+
+.rounds
+  margin-left: auto
+  svg
+    fill: #00b33f
+
+.settings-titles
+  color: #818181
+  align-items: center
+  font-size: 17px
+  height: 39px
+  input
+    display: none
+  label
+    margin-left: 19px
+    cursor: pointer
+    opacity: 0.8
+    &:hover
+      opacity: 1
+  input:checked + label
+    color: #ffffff
+    cursor: default
+    opacity: 1
+
+.settings-options
+  flex-direction: column
+  margin-top: 14px
+  color: #818181
+  font-size: 15px
+  input
+    display: none
+  label
+    width: 17px
+    height: 17px
+    border-radius: 50%
+    border: 1px solid #999999
+    cursor: pointer
+    position: relative
+  input:checked + label
+    &:before
+      content: ""
+      position: absolute
+      width: 7px
+      height: 7px
+      border: 1px solid #ffffff
+      background: #ffffff
+      border-radius: 50%
+      left: 25%
+      top: 25%
+  div
+    color: #ffffff
+    font-size: 13px
+    margin-bottom: 19px
+    margin-left: 22px
+    span
+      margin-top: 2px
+      margin-left: 7px
+
+.background-music
+  margin-bottom: 22px
+  margin-left: 19px
+  margin-top: 3px
+
+.image-border
+  max-width: 1920px
+  min-width: 1280px
+  height: 209px
+  background-image: url(/images/border.png)
+  background-repeat: no-repeat
+  background-position: -8px
+  margin-top: 25px
+
+.balance
+  width: 455px
+  height: 189px
+  background: #181818
+  border-radius: 5px
+  flex-direction: column
+  margin-left: 20px
+  margin-top: 91px
+
+.balance-header
+  border-bottom: 1px solid #313131
+  color: #797979
+  margin-right: 8px
+  margin-left: 12px
+  height: 36px
+  justify-content: center
+  align-items: center
+  font-size: 18px
+  svg
+    fill: #747474
+    margin-left: auto
+    width: 14px
+    height: 14px
+    margin-right: 8px
+    cursor: pointer
+  span
+    margin-left: 5px
+
+.balance-input
+  width: 422px
+  height: 56px
+  background: #323232
+  border-radius: 4px
+  margin-top: 18px
+  margin-left: 16px
+  input
+    margin-left: 17px
+    width: 100%
+    height: 100%
+    background: none
+    border: none
+    outline: none
+    color: #ffffff
+    font-size: 23px
+
+.balance-footer
+  margin-top: 17px
+  margin-left: 16px
+  div
+    width: 156px
+    height: 42px
+    border: 1px solid #00682c
+    border-radius: 15px
+    justify-content: center
+    align-items: center
+    color:  #00b33f
+    font-size: 21px
+    cursor: pointer
+    opacity: 0.8
+    &:hover
+      opacity: 1
+
+.balance-not
+  margin-left: 31px
+  margin-top: 13px
+  color: #ffffff
+  font-size: 15.5px
+
+footer
+  margin-top: 7px
+  border-top: 9px solid #ffffff
+
+.footer-dollar
+  width: 42px
+  height: 42px
+  border: 1px solid #00892f
+  border-radius: 15px
+  color: #00b33f
+  justify-content: center
+  align-items: center
+  margin-top: 43px
+  margin-left: 36px
+  font-size: 25px
+  cursor: pointer
+
+.footer-info
+  margin-top: 30px
+  margin-left: 28px
+  width: 415px
+  height: 68px
+  background: linear-gradient(to top, #131313, #1f1f1f)
+  border-radius: 4px
+
+.footer-info-content
+  flex-direction: column
+  margin-top: 8px
+  margin-left: 11px
+  margin-right: 26px
+  span:first-of-type
+    font-size: 15.5px
+    color: #7a7a7a
+    margin-bottom: 5px
+  span:last-of-type
+    font-size: 22px
+    color: #ffffff
+
+.footer-info-border
+  border-left: 1px solid #323232
+  height: 36px
+  margin-top: 16px
+  margin-right: 7.5px
+
+.footer-mini-button
+  border-radius: 50%
+  border: 1px solid #848484
+  width: 42px
+  height: 42px
+  margin-top: 42px
+  margin-left: 32px
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  svg
+    fill: #ffffff
+    width: 20px
+    height: 20px
+    margin-left: 5px
+
+.footer-mini-button:last-of-type
+  margin-left: 0px
+  svg
+    fill: #be0028
+    margin-left: 0px
+    width: 22px
+    height: 22px
+
+.footer-chips
+  width: 685px
+  height: 103px
+  border-radius: 36px
+  margin-top: 13px
+  margin-left: 24px
+  box-shadow: inset 0px -40px 20px -30px rgba(18,18,18,1)
+  margin-right: 44px
+  img
+    width: 80px
+    height: 80px
+    margin-left: 8px
+    margin-right: 9px
+    margin-top: 11px
+
+.footer-button
+  border: 1px solid #848484
+  border-radius: 15px
+  justify-content: center
+  align-items: center
+  font-size: 18px
+  color: #ffffff
+  height: 42px
+  padding-left: 20px
+  padding-right: 27px
+  margin-top: 41px
+  margin-right: 23px
+  cursor: pointer
+
+.footer-sound
+  margin-left: auto
+  width: 30px
+  height: 30px
+  margin-right: 47px
+  margin-top: 50px
+  cursor: pointer

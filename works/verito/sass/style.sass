@@ -1,0 +1,412 @@
+// compileExpanded: C:/Users/Vopros/Desktop/verito/stylesheets/style.css
+
+body
+  margin: 0px
+  display: flex
+  justify-content: center
+  align-items: center
+  min-width: 1024px
+  max-width: 1920px
+  flex-direction: column
+  font-family: 'Roboto'
+  font-weight: 400
+  font-size: 16px
+  color: #212121
+
+div, header, h1, section, footer
+  display: flex
+
+a
+  color: inherit
+  text-decoration: inherit
+
+
+.header
+  background-image: url('../images/bg-header.png')
+  background-repeat: no-repeat
+  height: 700px
+  flex-direction: column
+  width: 100%
+
+.header-header
+  img
+    margin-right: auto
+    margin-left: 96px
+    margin-top: 21px
+
+.header-buttons
+  margin-right: 96px
+  margin-left: auto
+
+.header-buttons__button
+  margin-left: 10px
+  margin-top: 32px
+  width: 114px
+  height: 30px
+  border: 3px solid #fff
+  font-size: 16px
+  justify-content: center
+  align-items: center
+  color: #fff
+  cursor: pointer
+
+.header-main
+  flex-direction: column
+  width: 925px
+  margin-top: 62px
+  align-self: center
+
+
+.header-main__title
+  font-weight: 700
+  font-size: 58px
+  text-align: center
+  span:first-of-type
+    color: #fc0
+  span:last-of-type
+    color: #fff
+
+.header-main__smiles
+  padding-top: 77px
+  padding-left: 71px
+
+.header-main__description
+  padding-top: 42px
+  color: #fff
+  justify-content: space-around
+  text-align: center
+  letter-spacing: 0.9px
+  line-height: 22px
+  width: 940px
+  span
+    width: 175px
+
+.outline
+  width: 100%
+  height: 1160px
+  flex-direction: column
+  background: #fff
+  align-items: center
+  background-image: url('../images/lines.png')
+  background-repeat: no-repeat
+  background-position: 51.8% 126px
+
+.outline__arrow
+  margin-left: 35px
+
+.outline-title
+  margin-top: 79px
+  margin-left: 135px
+  flex-direction: column
+  span:first-of-type
+    font-weight: 700
+    font-size: 47px
+    letter-spacing: 0.5px
+  span:last-of-type
+    font-size: 24px
+    margin-left: auto
+    margin-top: 4px
+
+.outline-path
+  flex-wrap: wrap
+  font-weight: 700
+  width: 1095px
+  padding-left: 337px
+
+.outline-path__block
+  line-height: 22px
+  height: 100px
+  margin-bottom: 18px
+  margin-top: 109px
+  width: 452px
+  span
+    margin-left: 30px
+    width: 260px
+    display: flex
+
+
+.outline-path__block:nth-child(even)
+  span
+    margin-left: auto
+    margin-right: 70px
+
+.outline-path__block:last-of-type
+  margin-left: 110px
+  span
+    margin-left: 30px
+
+.outline-path__button
+  font-weight: 700
+  font-size: 24px
+  justify-content: center
+  align-items: center
+  color: #fff
+  margin-left: 92px
+  margin-top: 92px
+  width: 241px
+  height: 98px
+  background: #7cdca6
+  border-radius: 28px
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1)
+  letter-spacing: 0.5px
+  div
+    border-radius: 12px
+    justify-content: center
+    align-items: center
+    width: 200px
+    height: 60px
+    background: #00b63e
+    cursor: pointer
+
+.goods
+  height: 515px
+  justify-content: center
+  background-image: url('../images/bg-goods.png')
+  background-repeat: no-repeat
+  width: 100%
+
+.goods-content
+  background-image: url('../images/rectangle.png')
+  background-repeat: no-repeat
+  width: 1000px
+  height: 100%
+  background-position: 72% 57px
+  flex-direction: column
+  align-self: center
+
+.goods-content__title
+  font-weight: 700
+  font-size: 48px
+  display: block
+  text-align: center
+  width: 780px
+  margin-top: 127px
+  margin-left: 128px
+  line-height: 50px
+  span:first-of-type
+    color: #fff
+
+.goods-content-list
+  flex-wrap: wrap
+  margin-top: 51px
+  margin-left: 147px
+
+.goods-content-list__ul
+  font-size: 22px
+  align-items: center
+  width: 267px
+  margin-right: 15px
+  div
+    border-radius: 50%
+    width: 7px
+    height: 7px
+    background: #fff
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2)
+  span
+    margin-left: 17px
+    margin-top: 2px
+
+.goods__less-width
+  width: 244px !important
+
+.goods-content-footer
+  font-size: 22px
+  font-weight: 700
+  align-items: center
+  margin-top: 59px
+  margin-left: 77px
+  div
+    display: block
+    margin-left: 45px
+  span:nth-child(even)
+    color: #fff
+
+.tariff
+  height: 515px
+  background: #fff
+  font-size: 28px
+  img
+    margin-top: 106px
+
+.tariff-description
+  flex-direction: column
+  margin-left: 11px
+  margin-top: 155px
+
+.tariff-description__title
+  font-weight: 700
+  font-size: 48px
+
+.tariff-description__border
+  border-top: 1px solid #dbdbdb
+  width: 316px
+  margin-top: 17px
+
+.tariff-description__tag
+  display: block
+  margin-top: 26px
+  margin-bottom: 6px
+  span:last-of-type
+    margin-left: 21px
+    position: relative
+    &:after
+      content: ""
+      background-image: url('../images/tag.png')
+      background-repeat: no-repeat
+      position: absolute
+      width: 114px
+      height: 48px
+      left: -17px
+      top: -7px
+
+.feedback
+  height: 515px
+  background: #ececec
+  width: 100%
+
+.feedback__center
+  margin: auto
+
+.feedback-forms
+  flex-direction: column
+  margin-top: 43px
+
+.feedback-forms__title
+  display: block
+  font-weight: 700
+  font-size: 48px
+  line-height: 50px
+  margin-bottom: 16px
+  span:first-of-type
+    color: #00c4f7
+
+.feedback-forms-inputs
+  flex-direction: column
+
+.feedback-forms-inputs__input
+  flex-direction: column
+  margin-bottom: 7px
+  div
+    width: 394px
+    height: 39px
+    background: #fff
+    border: 1px solid #d8d8d8
+    border-radius: 6px
+    margin-top: 2px
+  span
+    margin-left: 2px
+    font-weight: 700
+  input
+    margin-left: 16px
+    outline: none
+    background: none
+    border: none
+    width: 360px
+    font-size: 14px
+    &::-webkit-input-placeholder
+      color: #9d9d9d
+      font-weight: 300
+      font-style: italic
+
+.feedback-forms-inputs:last-of-type
+  flex-direction: row
+  img
+    margin-top: 65px
+    margin-left: 26px
+  div
+    div
+      height: 98px
+    textarea
+      width: 360px
+      height: 70px
+      margin-top: 13px
+      margin-left: 15px
+      outline: none
+      background: none
+      border: none
+      font-size: 14px
+      resize: none
+      &::-webkit-input-placeholder
+        color: #9d9d9d
+        font-weight: 300
+        font-style: italic
+
+.feedback-send
+  flex-direction: column
+  img
+    margin-top: 28px
+    margin-left: 22px
+
+.feedback-send__button
+  font-weight: 700
+  font-size: 24px
+  justify-content: center
+  align-items: center
+  color: #fff
+  margin-left: 36px
+  margin-top: 72px
+  width: 241px
+  height: 98px
+  background: #7cdca6
+  border-radius: 28px
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1)
+  letter-spacing: 0.5px
+  div
+    border-radius: 12px
+    justify-content: center
+    align-items: center
+    width: 200px
+    height: 60px
+    background: #00b63e
+    cursor: pointer
+
+.location
+  height: 515px
+  background: #fff
+
+.location-contacts
+  flex-direction: column
+  font-weight: 700
+  margin-top: 70px
+
+.location-contacts__title
+  font-size: 48px
+  margin-bottom: 38px
+  margin-left: 10px
+
+.location-contacts__name
+  font-size: 24px
+  margin-left: 10px
+
+.location-contacts__content
+  margin-top: 18px
+  margin-left: 10px
+  font-size: 18px
+  line-height: 24px
+  margin-bottom: 17px
+  align-items: center
+  span
+    margin-left: 20px
+
+.location-map
+  flex-direction: column
+  margin-top: 85px
+  margin-left: 90px
+  span
+    margin-top: 14px
+    margin-left: 170px
+
+.footer
+  // align-self: center
+  height: 79px
+  width: 920px
+  background: #fff
+  border-top: 1px solid #e5e5e5
+  color: #9f9d9d
+  font-weight: 300
+  justify-content: center
+  align-items: center
+  font-size: 14px
+  span
+    margin-top: -20px
+    margin-left: 36px

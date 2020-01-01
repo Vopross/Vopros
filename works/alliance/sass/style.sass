@@ -1,0 +1,666 @@
+// compileExpanded: C:/Users/Александр/Desktop/old-alliance/stylesheets/style.css
+
+@font-face
+	font-family: 'Helvetica-Bold'
+	src: url('../fonts/HelveticaMedium.eot')
+	src: url('../fonts/HelveticaMedium.eot?#iefix') format('embedded-opentype')
+	src: url('../fonts/HelveticaMedium.woff') format('woff')
+	src: url('../fonts/HelveticaMedium.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+
+@font-face
+  font-family: 'Helvetica-Light'
+  src: url('../fonts/HelveticaLight.eot')
+  src: url('../fonts/HelveticaLight.eot?#iefix') format('embedded-opentype')
+  src: url('../fonts/HelveticaLight.woff') format('woff')
+  src: url('../fonts/HelveticaLight.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Helvetica'
+  src: url('../fonts/HelveticaRegular.eot')
+  src: url('../fonts/HelveticaRegular.eot?#iefix') format('embedded-opentype')
+  src: url('../fonts/HelveticaRegular.woff') format('woff')
+  src: url('../fonts/HelveticaRegular.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-Bold'
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot')
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype')
+  src: url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff')
+  src: url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+body
+	font-family: Helvetica
+	display: flex
+	flex-wrap: wrap
+	background: #2d3b6d
+
+.body
+  width: 1366px
+  margin: 0 auto
+  flex-direction: column
+div, img, label
+  display: flex
+
+// left-menu start
+
+.left-menu
+	width: 113px
+	height: 538px
+	background: #394572
+	flex-direction: column
+	font-family: HelveticaNeue-Bold
+	font-size: 13px
+	color: #576187
+	input
+		display: none
+	label
+		height: 151px
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		border-top: 1px solid #343f67
+		cursor: pointer
+		img
+			opacity: 0.2
+	input:checked + label
+	  color: #ffffff
+	  border-left: 3px solid #419bf9
+	span
+		margin-top: 10px
+	.p-active
+		img
+			opacity: 1
+
+.menu-avatar
+	height: 93px
+	align-items: center
+	justify-content: center
+
+// left-menu end
+
+// main start
+
+.main
+	width: 969px
+	height: 538px
+	background: #435084
+	flex-direction: column
+
+.main-header
+	height: 91px
+	align-items: center
+
+.image-logo
+	margin-left: 15px
+
+.header-input
+	width: 421px
+	border-bottom: 2px solid #505c8c
+	margin-left: auto
+	height: 27px
+	img
+		margin-top: 8px
+	input
+	  margin-left: 9px
+	  outline: none
+	  background: none
+	  border: none
+	  width: 700px
+	  color: #7c87b3
+	  font-size: 13px
+	  font-family: Helvetica-Light
+	  &::-webkit-input-placeholder
+	    color: #7c87b3
+
+.header-icons
+	margin-left: 20px
+	margin-top: 5px
+	margin-right: 20px
+
+.h-icon
+	position: relative
+	margin: 0 10px
+	span
+		top: -13px
+		left: 19px
+		padding: 1px 5px
+		font-size: 11px
+		font-family: Helvetica
+		position: absolute
+		color: white
+		border-radius: 100px
+		border: 3px solid #435084
+		background-color: #419bf9
+
+.main-total
+	height: 46px
+	border-top: 1px solid #3f4c7d
+	border-bottom: 1px solid #3f4c7d
+	align-items: center
+	font-size: 13px
+	color: #ffffff
+	font-family: Helvetica
+
+.total-date
+	opacity: 0.38
+	margin-left: 20px
+	span
+		padding-left: 10px
+	img
+		opacity: 0.5
+
+.total-stats
+	margin-left: 26px
+
+.total-all
+	margin-left: auto
+	margin-right: 26px
+	opacity: 0.59
+	span
+		padding-left: 10px
+	img
+		opacity: 0.5
+
+.total-add
+	width: 47px
+	height: 46px
+	background: #4277c4
+	justify-content: center
+	align-items: center
+	font-size: 27px
+	cursor: pointer
+
+.project-title
+	width: 938px
+	height: 24px
+	align-items: center
+	background: #3d4878
+	text-transform: uppercase
+	font-family: Helvetica
+	font-size: 10px
+	letter-spacing: 0.13px
+	color: #71799c
+	border-radius: 4px
+	margin-top: 11px
+	margin-left: 15px
+	img
+		margin-left: 22px
+		margin-right: 16px
+
+.title-project
+	margin-right: 437px
+
+.title-program
+	margin-right: 58px
+
+.title-status
+	margin-right: 58px
+
+.title-progress
+	margin-right: 34px
+
+.projects
+	flex-direction: column
+
+.project
+	width: 938px
+	height: 46px
+	align-items: center
+	background: #4d5c92
+	border-bottom: 4px solid #485687
+	margin-top: 9px
+	margin-left: 15px
+	border-radius: 4px
+	font-family: Helvetica
+	font-size: 13px
+	color: #ffffff
+	img
+		transform: rotate(90deg)
+		margin-left: 17px
+		cursor: pointer
+		margin-right: 20px
+	span
+		text-overflow: ellipsis
+
+.project-border
+	border-radius: 25px
+	width: 4px
+	height: 35px
+	background: #46bd86
+	margin-left: 5px
+
+.project-border-yellow
+	border-radius: 25px
+	width: 4px
+	height: 35px
+	background: #dfc399
+	margin-left: 5px
+
+.project-name
+	width: 479px
+
+.project-program
+	width: 111px
+	opacity: 0.39
+
+.project-dot
+	border-radius: 50%
+	width: 5px
+	height: 5px
+	background: #54cda1
+	margin-right: 6px
+
+.project-status
+	width: 96px
+	opacity: 0.39
+
+.project-progress
+	width: 88px
+	color: #f77e42
+	span:first-of-type
+		color: #54cda1
+	span:last-of-type
+		color: #ffffff
+
+.project-date
+	width: 67px
+
+.project-check
+	width: 27px
+	height: 27px
+	border-radius: 6px
+	border: 1px solid #ffffff
+	opacity: 0.25
+	justify-content: center
+	align-items: center
+	font-size: 15px
+
+// main end
+
+// steepometer start
+
+.steepometer
+	width: 285px
+	height: 539px
+	background: #394572
+	flex-direction: column
+
+.steepometer-header
+	flex-direction: column
+	font-family: Helvetica
+	color: #ffffff
+	height: 91px
+	div:first-of-type
+		justify-content: center
+		margin-top: 36px
+		margin-left: 34px
+		font-size: 16px
+	div:last-of-type
+		font-size: 14px
+		margin-top: 15px
+		margin-left: 59px
+		height: 10px
+		height: 24px
+	input
+		display: none
+	label
+		cursor: pointer
+		opacity: 0.39
+		margin-right: 21px
+	span
+		padding-left: 3px
+		padding-right: 3px
+	input:checked + label
+		border-bottom: 2px solid #419bf9
+		opacity: 1
+
+.steepometer-body
+	flex-direction: column
+
+.quota-task
+	position: relative
+	padding-top: 40px
+	padding-bottom: 22px
+	justify-content: center
+	border-bottom: 1px solid #333e67
+	border-top: 1px solid #3d4a79
+
+	svg
+		margin: 22px
+
+.quota-task-data
+	position: absolute
+	top: 10px
+	width: 100%
+	height: 100%
+	justify-content: center
+
+
+.qt-title
+	font-size: 12px
+	font-weight: 500
+	line-height: 12px
+	color: white
+	text-align: right
+	padding-top: 3px
+
+.qt-total
+	font-family: Helvetica-light
+	color: #68e8b4
+	font-size: 28px
+
+.q-tasks
+	position: absolute
+	top: 17px
+  margin-left: 5px
+	div
+		margin: 3px
+
+.q-status
+	position: absolute
+	top: 80px
+	flex-direction: row
+	text-align: center
+	margin-left: 7px
+	div
+		margin: 1px 3px
+		flex-direction: column
+		justify-content: center
+		span
+			font-size: 34px
+			font-family: Helvetica-light
+			color: white
+
+.a-left
+	position: absolute
+	left: 70px
+	top: 106px
+	opacity: 0.6
+	transform: rotate(180deg)
+
+.a-right
+	position: absolute
+	right: 55px
+	top: 106px
+	opacity: 0.6
+
+.min
+	color: #68e6b3 !important
+	font-size: 18px !important
+	padding-bottom: 3px
+
+.qsc-data
+	align-items: flex-end
+	flex-direction: row !important
+
+.qsc-title
+	span
+		color: #adb5da !important
+		font-size: 13px !important
+
+#obj, #obj-blue
+	width: 9px
+	height: 9px
+	background-color: #3e4b7b
+	border-radius: 50%
+	border: 3px solid #42e1a8
+
+.blue
+	#obj-blue
+		border: 3px solid #419bf9 !important
+	.qt-total
+		color: #419bf9
+	.min
+		color: #419bf9 !important
+
+
+
+// steepometer end
+
+nav
+  display: flex
+  width: 1099px
+  height: 60px
+  border-bottom: 1px solid #efefef
+  background: #fcfcfc
+  input
+    display: none
+  label
+    cursor: pointer
+    font-family: Helvetica-Bold
+    font-size: 15px
+    color: #9f9f9f
+    opacity: 0.94
+    padding-left: 31px
+    padding-right: 34px
+    justify-content: center
+    align-items: center
+  input:checked + label
+    color: #419bf9
+    opacity: 1
+    border-bottom: 3px solid #419bf9
+  div
+    border-left: 1px solid #d8d8d8
+    height: 38px
+    margin-top: 12px
+  img
+    margin-left: auto
+    margin-top: 22px
+    margin-right: 14px
+
+.nav-setting
+  color: #4d5c94
+  opacity: 0.42
+  font-size: 15px
+  font-family: Helvetica-Bold
+  margin-right: 31px
+  margin-top: 22px
+  cursor: pointer
+
+.left-bar
+  width: 265px
+  border-right: 1px solid #efefef
+  border-bottom: 1px solid #efefef
+  background: #fcfcfc
+
+.right
+  flex-direction: column
+
+.aside
+	background: #4d5c94
+	flex-direction: column
+	width: 100%
+
+
+.time
+	font-size: 12px
+	color: #fff
+	opacity: 0.2
+	position: absolute
+	top: 170px
+	margin-left: 10px
+	span
+		margin: 0 10px
+
+#obj
+	width: 9px
+	height: 9px
+	background-color: #3e4b7b
+	border-radius: 50%
+	border: 3px solid #42e1a8
+
+.team
+  height: 215px
+  border-left: 3px solid #dfc399
+  border-bottom: 1px solid #efefef
+  width: 100%
+
+.team-mark
+  color: #ffffff
+  div
+    margin-top: 30px
+    margin-left: 9px
+    width: 16px
+    height: 16px
+    border-radius: 3px
+    justify-content: center
+    align-items: center
+    background: #419bf9
+    font-size: 13px
+  img
+    margin-top: 18px
+    margin-left: 14px
+
+.team-list
+  flex-direction: column
+  font-family: Helvetica
+  font-size: 13px
+  color: #292929
+  margin-left: 10px
+  margin-top: 3px
+  span
+    margin-top: 14px
+  span:first-of-type
+    font-family: HelveticaNeue-Bold
+    font-size: 15px
+    color: #000000
+
+.team-eyes
+  opacity: 0.21
+
+/* graphics */
+.grp
+	flex-direction: column
+	position: relative
+
+#salesChart
+	position: absolute
+	bottom: 0
+
+.graphics-icons
+	margin-top: 12px
+	img
+		margin-right: 14px
+		cursor: pointer
+	img:first-of-type
+		margin-left: 10px
+
+.img-right
+	margin-left: auto
+
+.sales-title
+	font-family: Helvetica
+	color: #414969
+	flex-direction: row
+	span:first-of-type
+		margin-left: 41px
+		font-size: 24px
+	span:last-of-type
+		font-size: 16px
+		margin-left: 25px
+		margin-top: 9px
+	input
+		width: 250px
+		height: 30px
+		outline: none
+		background: none
+		border: none
+	  color: #7c87b3
+		font-size: 14px
+		font-family: Helvetica
+		margin-left: 11px
+		&::-webkit-input-placeholder
+			color: #c4c4c4
+	div
+		margin-left: 27px
+		width: 269px
+		height: 31px
+		border-radius: 3px
+		border: 1px solid #e5e5e5
+	img
+		margin-left: 18px
+		margin-top: 6px
+		cursor: pointer
+
+.sales-title-advice
+	font-family: Helvetica
+	margin-left: 41px
+	font-size: 24px
+	color: #ffffff
+
+.graphics
+  height: 1388px
+  width: 1099px
+  background: #eeeeee
+  flex-wrap: wrap
+
+.graphics-sales
+  width: 1065px
+  height: 550px
+  background: #ffffff
+  border-left: 3px solid #dfc399
+  margin-left: 14px
+  margin-top: 13px
+
+.graphics-plan
+  border-left: 3px solid #dfc399
+  width: 522px
+  height: 319px
+  background: #ffffff
+  margin-left: 14px
+
+.month-descr
+	position: absolute
+	top: 100px
+	right: 100px
+	flex-direction: column
+	.row
+		margin: 7px
+		span
+			color: #9c9c9c
+			font-size: 13px
+			margin-left: 10px
+		.rectangle
+			width: 15px
+			height: 15px
+			border-radius: 4px
+
+.graphics-advice
+  width: 528px
+  height: 319px
+  background: #6970cc
+  margin-left: 14px
+
+.graphics-group-sale
+  width: 1065px
+  height: 458px
+  background: #ffffff
+  border-left: 3px solid #dfc399
+  margin-left: 14px
+
+footer
+  display: flex
+  height: 57px
+  width: 100%
+  background: #4d5c94
+  align-items: center
+  color: #ffffff
+  img
+    margin-left: 30px
+  span:first-of-type
+    opacity: 0.31
+    font-family: Helvetica
+    margin-left: 30px
+  span:last-of-type
+    font-family: Helvetica-Bold
+    font-size: 16px
+    margin-left: 28px

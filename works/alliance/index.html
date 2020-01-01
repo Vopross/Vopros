@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <!-- <script src="js/progressbar.min.js"></script>
+  <script src="js/zingchart.min.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/main.js"></script> -->
+  <title>Document</title>
+</head>
+<body>
+  <div class="body">
+    <div class="tasks">
+      <div class="left-menu">
+        <div class="menu-avatar">
+          <img src="images/avatar1.png" width="53" height="52" alt="">
+        </div>
+        <input type="radio" name="left-menu" id="programs">
+        <label for="programs">
+          <img src="images/horse.png" width="33" height="57" alt="">
+          <span>Программы</span>
+        </label>
+        <input type="radio" name="left-menu" id="projects" checked>
+        <label for="projects" class="p-active">
+          <img src="images/people.png" width="48" height="41" alt="">
+          <span>Проекты</span>
+        </label>
+        <input type="radio" name="left-menu" id="tasks">
+        <label for="tasks">
+          <img src="images/tasks.png" width="41" height="37" alt="">
+          <span>Задачи</span>
+        </label>
+      </div>
+      <div class="main">
+        <div class="main-header">
+          <img class="image-logo" src="images/alliance.png" width="115" height="29" alt="">
+          <div class="header-input">
+            <img src="images/search-icon.png" width="14" height="13" alt="">
+            <input type="text" placeholder="Напечатайте что-нибудь, чтобы начать поиск..">
+          </div>
+          <div class="header-icons">
+            <div class="h-icon">
+              <img src="images/settings-icon.png" width="22" height="22" alt="">
+            </div>
+            <div class="h-icon">
+              <img src="images/windows-icon.png" width="31" height="27" alt="">
+              <span>7</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-total">
+          <img src="" alt="">
+          <div class="total-date"><img src="images/date.png" alt=""><span>12 сентября</span></div>
+          <span class="total-stats">6 задач в работе, 5 выполненных, 14 просроченных</span>
+          <div class="total-all"><img src="images/task.png" alt=""><span>Все задачи</span></div>
+          <div class="total-add"><span>+</span></div>
+        </div>
+        <div class="project-title">
+          <img src="images/title-project.png" width="15" height="7" alt="">
+          <span class="title-project">Проект</span>
+          <span class="title-program">Программа</span>
+          <span class="title-status">Статус</span>
+          <span class="title-progress">Прогресс</span>
+          <span>К выполнению</span>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <div class="project-border"></div>
+            <img src="images/arrow.png" width="5" height="9" alt="">
+            <span class="project-name">Открытие Екатеринбургского представительства</span>
+            <span class="project-program">Расширение</span>
+            <div class="project-dot"></div>
+            <span class="project-status">В работе</span>
+            <div class="project-progress">
+              <span>5</span>
+              <span>/24</span>
+            </div>
+            <span class="project-date">20 авг.</span>
+            <div class="project-check"><span>✓</span></div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <div class="project-border-yellow"></div>
+            <img src="images/arrow.png" width="5" height="9" alt="">
+            <span class="project-name">Подготовка в налоговой проверке</span>
+            <span class="project-program">Оптимизация</span>
+            <div class="project-dot"></div>
+            <span class="project-status">В работе</span>
+            <div class="project-progress">
+              <span>2</span>
+              <span>/5</span>
+            </div>
+            <span class="project-date">20 авг.</span>
+            <div class="project-check"><span>✓</span></div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <div class="project-border"></div>
+            <img src="images/arrow.png" width="5" height="9" alt="">
+            <span class="project-name">Внедрение 1С 8.3 в Красноярский офис</span>
+            <span class="project-program">Оптимизация</span>
+            <div class="project-dot"></div>
+            <span class="project-status">В работе</span>
+            <div class="project-progress">
+              <span>3</span>
+              <span>/2/</span>
+              <span>10</span>
+            </div>
+            <span class="project-date">2 сент.</span>
+            <div class="project-check"><span>✓</span></div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <div class="project-border"></div>
+            <img src="images/arrow.png" width="5" height="9" alt="">
+            <span class="project-name">Открытие Екатеринбургского представительства</span>
+            <span class="project-program">Расширение</span>
+            <div class="project-dot"></div>
+            <span class="project-status">В работе</span>
+            <div class="project-progress">
+              <span>5</span>
+              <span>/24</span>
+            </div>
+            <span class="project-date">20 авг.</span>
+            <div class="project-check"><span>✓</span></div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <div class="project-border"></div>
+            <img src="images/arrow.png" width="5" height="9" alt="">
+            <span class="project-name">Открытие Екатеринбургского представительства</span>
+            <span class="project-program">Расширение</span>
+            <div class="project-dot"></div>
+            <span class="project-status">В работе</span>
+            <div class="project-progress">
+              <span>5</span>
+              <span>/24</span>
+            </div>
+            <span class="project-date">20 авг.</span>
+            <div class="project-check"><span>✓</span></div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <div class="project-border-yellow"></div>
+            <img src="images/arrow.png" width="5" height="9" alt="">
+            <span class="project-name">Подготовка в налоговой проверке</span>
+            <span class="project-program">Оптимизация</span>
+            <div class="project-dot"></div>
+            <span class="project-status">В работе</span>
+            <div class="project-progress">
+              <span>2</span>
+              <span>/5</span>
+            </div>
+            <span class="project-date">20 авг.</span>
+            <div class="project-check"><span>✓</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="steepometer">
+        <div class="steepometer-header">
+          <div>
+            <span>Крутометр</span>
+            <img src="" alt="">
+          </div>
+          <div>
+            <input type="radio" name="steepometer" id="steepometer-day" checked>
+            <label for="steepometer-day"><span>День</span></label>
+            <input type="radio" name="steepometer" id="steepometer-week">
+            <label for="steepometer-week"><span>Неделя</span></label>
+            <input type="radio" name="steepometer" id="steepometer-month">
+            <label for="steepometer-month"><span>Месяц</span></label>
+          </div>
+        </div>
+        <div class="steepometer-body">
+
+          <div class="quota-task">
+            <div class="quota-task-data">
+              <a class="a-left" href="#"><img src="images/arrow.png" /></a>
+              <a class="a-right" href="#"><img src="images/arrow.png" /></a>
+              <div class="q-tasks">
+                <div class="qt-title"><span>Задачи<br /> по Квотам</span></div>
+                <div class="qt-total"><span>71%</span></div>
+              </div>
+              <div class="q-status">
+                <div class="qs-calls">
+                  <div class="qsc-data">
+                    <span class="min">19/</span><span>30</span>
+                  </div>
+                  <div class="qsc-title">
+                    <span>Звонки</span>
+                  </div>
+                </div>
+                <div class="qs-calls">
+                  <div class="qsc-data">
+                    <span class="min">3/</span><span>4</span>
+                  </div>
+                  <div class="qsc-title">
+                    <span>Встречи</span>
+                  </div>
+                </div>
+              </div>
+              <div class="time"><span>8:00</span><span>17:00</span></div>
+            </div>
+            <div id="obj"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="213" height="117"  viewBox="0 0 526.29 275.57">
+               <defs>
+                  <filter id="a" width="200%" height="200%" x="-50%" y="-50%">
+                     <feMorphology in="SourceGraphic" operator="dilate" radius="7" result="SvgjsFeMorphology1010Out"/>
+                     <feOffset dy="2" in="SvgjsFeMorphology1010Out" result="SvgjsFeOffset1011Out"/>
+                     <feGaussianBlur in="SvgjsFeOffset1011Out" result="SvgjsFeGaussianBlur1012Out" stdDeviation="2"/>
+                     <feComposite in="SvgjsFeGaussianBlur1012Out" in2="SourceAlpha" operator="out" result="SvgjsFeComposite1013Out"/>
+                  </filter>
+                  <filter id="b" width="200%" height="200%" x="-50%" y="-50%">
+                     <feGaussianBlur in="SourceGraphic" result="SvgjsFeGaussianBlur1017Out" stdDeviation="2.5"/>
+                  </filter>
+                  <mask id="c">
+                     <path  class="cls-1"  fill="#fff" d="M342,317.76l-130.21,1.93s-130-14.94-130-130.42C81.87,58.34,212,50.13,212,50.13h261.7s128.5,5.31,128.5,133.82S478.49,317.76,478.49,317.76H342Z"/>
+                  </mask>
+                  <clipPath id="d">
+                     <path  class="cls-1"  fill="#fff" d="M342,317.76l-130.21,1.93s-130-14.94-130-130.42C81.87,58.34,212,50.13,212,50.13h261.7s128.5,5.31,128.5,133.82S478.49,317.76,478.49,317.76H342Z"/>
+                  </clipPath>
+               </defs>
+               <path  class="cls-1"  fill="none" stroke="#53749b" stroke-miterlimit="50" stroke-width="16" d="M342,317.76l-130.21,1.93s-130-14.94-130-130.42C81.87,58.34,212,50.13,212,50.13h261.7s128.5,5.31,128.5,133.82S478.49,317.76,478.49,317.76H342Z" clip-path="url(&quot;#d&quot;)" transform="translate(-78.87 -47.13)"/>
+               <path  class="cls-1"  id="graph-path" fill="none" stroke="#76eac1" stroke-miterlimit="50" stroke-width="16" d="M342,317.76l-130.21,1.93s-130-14.94-130-130.42C81.87,58.34,212,50.13,212,50.13h261.7s128.5,5.31,128.5,133.82S478.49,317.76,478.49,317.76H342Z" clip-path="url(&quot;#d&quot;)" transform="translate(-78.87 -47.13)"/>
+            </svg>
+          </div>
+          <div class="quota-task blue">
+            <div class="quota-task-data">
+              <div class="q-tasks">
+                <div class="qt-title"><span>Текущие<br /> задачи</span></div>
+                <div class="qt-total"><span>13%</span></div>
+              </div>
+              <div class="q-status">
+                <div class="qs-calls">
+                  <div class="qsc-data">
+                    <span class="min">16/</span><span>21</span>
+                  </div>
+                  <div class="qsc-title">
+                    <span>Задачи</span>
+                  </div>
+                </div>
+              </div>
+              <div class="time"><span>8:00</span><span>17:00</span></div>
+            </div>
+            <div id="obj-blue"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="213" height="117"  viewBox="0 0 526.29 275.57">
+               <defs>
+                  <filter id="a" width="200%" height="200%" x="-50%" y="-50%">
+                     <feMorphology in="SourceGraphic" operator="dilate" radius="7" result="SvgjsFeMorphology1010Out"/>
+                     <feOffset dy="2" in="SvgjsFeMorphology1010Out" result="SvgjsFeOffset1011Out"/>
+                     <feGaussianBlur in="SvgjsFeOffset1011Out" result="SvgjsFeGaussianBlur1012Out" stdDeviation="2"/>
+                     <feComposite in="SvgjsFeGaussianBlur1012Out" in2="SourceAlpha" operator="out" result="SvgjsFeComposite1013Out"/>
+                  </filter>
+                  <filter id="b" width="200%" height="200%" x="-50%" y="-50%">
+                     <feGaussianBlur in="SourceGraphic" result="SvgjsFeGaussianBlur1017Out" stdDeviation="2.5"/>
+                  </filter>
+                  <mask id="c">
+                     <path  class="cls-1"  fill="#fff" d="M342,317.76l-130.21,1.93s-130-14.94-130-130.42C81.87,58.34,212,50.13,212,50.13h261.7s128.5,5.31,128.5,133.82S478.49,317.76,478.49,317.76H342Z"/>
+                  </mask>
+                  <clipPath id="d">
+                     <path  class="cls-1"  fill="#fff" d="M342,317.76l-130.21,1.93s-130-14.94-130-130.42C81.87,58.34,212,50.13,212,50.13h261.7s128.5,5.31,128.5,133.82S478.49,317.76,478.49,317.76H342Z"/>
+                  </clipPath>
+               </defs>
+               <path  class="cls-1"  fill="none" stroke="#53749b" stroke-miterlimit="50" stroke-width="16" d="M342,317.76l-130.21,1.93s-130-14.94-130-130.42C81.87,58.34,212,50.13,212,50.13h261.7s128.5,5.31,128.5,133.82S478.49,317.76,478.49,317.76H342Z" clip-path="url(&quot;#d&quot;)" transform="translate(-78.87 -47.13)"/>
+               <path  class="cls-1"  id="graph-path-blue" fill="none" stroke="#419bf9" stroke-miterlimit="50" stroke-width="16" d="M342,317.76l-130.21,1.93s-130-14.94-130-130.42C81.87,58.34,212,50.13,212,50.13h261.7s128.5,5.31,128.5,133.82S478.49,317.76,478.49,317.76H342Z" clip-path="url(&quot;#d&quot;)" transform="translate(-78.87 -47.13)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="state">
+      <div class="left-bar">
+        <div class="team">
+          <div class="team-mark">
+            <div>
+              <span>✓</span>
+            </div>
+            <img src="images/for.png" width="42" height="42" alt="">
+          </div>
+          <div class="team-list">
+            <span>ЗаШтатом</span>
+            <span class="team-eyes">Управляющий</span>
+            <span>Главный Бухгалтер</span>
+            <span>Ведующий менеджер</span>
+            <span class="team-eyes">Менеджер Закупок</span>
+            <span>Администратор</span>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <nav>
+          <input type="radio" name="nav" id="desktop" checked>
+          <label for="desktop"><span>Рабочий стол</span></label>
+          <input type="radio" name="nav" id="calendar">
+          <label for="calendar"><span>Календарь</span></label>
+          <input type="radio" name="nav" id="diary">
+          <label for="diary"><span>Дневник</span></label>
+          <div></div>
+          <input type="radio" name="nav" id="strategy">
+          <label for="strategy"><span>Стратегия</span></label>
+          <input type="radio" name="nav" id="orgstructure">
+          <label for="orgstructure"><span>Оргструктура</span></label>
+          <img src="images/settings-icon1.png" width="17" height="17" alt="">
+          <span class="nav-setting">Настроить</span>
+        </nav>
+        <div class="graphics">
+          <div class="graphics-sales grp">
+            <div class="graphics-icons">
+              <img src="images/stats.png" width="14" height="13" alt="">
+              <img class="img-right" src="images/settings-graphic.png" width="17" height="16" alt="">
+              <img src="images/refresh.png" width="14" height="16" alt="">
+              <img src="images/delete.png" width="14" height=15 alt="">
+            </div>
+            <div class="sales-title grp">
+              <span>Продажи</span>
+              <span>Январь - май 2017</span>
+              <div>
+                <input type="text" placeholder="Выбрать показатель для сравнения">
+              </div>
+              <img src="images/stats-icon.png" width="23" height="21" alt="">
+              <img src="images/statistic.png" width="19" heioght="19" alt="">
+            </div>
+            <div id='salesChart'></div>
+          </div>
+          <div class="graphics-plan grp">
+            <div class="graphics-icons">
+              <img src="images/stats.png" width="14" height="13" alt="">
+              <img class="img-right" src="images/settings-graphic.png" width="17" height="16" alt="">
+              <img src="images/refresh.png" width="14" height="16" alt="">
+              <img src="images/delete.png" width="14" height=15 alt="">
+            </div>
+            <div class="sales-title">
+              <span>План на месяц</span>
+              <span>Май 2017</span>
+            </div>
+            <div id="pieChart"></div>
+            <div class="month-descr">
+              <div class="row">
+                <span class="rectangle" style="background-color: #4d5c94"></span><span>Отдел продаж</span>
+              </div>
+              <div class="row">
+                <span class="rectangle" style="background-color: #e0c59c"></span><span>Бухгалтерия</span>
+              </div>
+              <div class="row">
+                <span class="rectangle" style="background-color: #46bd86"></span><span>Маркетинг</span>
+              </div>
+            </div>
+          </div>
+          <div class="graphics-advice grp">
+            <div class="graphics-icons">
+              <img src="images/stats.png" width="14" height="13" alt="">
+              <img class="img-right" src="images/settings-graphic.png" width="17" height="16" alt="">
+              <img src="images/refresh.png" width="14" height="16" alt="">
+              <img src="images/delete.png" width="14" height=15 alt="">
+            </div>
+            <div class="sales-title-advice">
+              <span>Закон #14</span>
+            </div>
+          </div>
+          <div class="graphics-group-sale grp">
+            <div class="graphics-icons">
+              <img src="images/stats.png" width="14" height="13" alt="">
+              <img class="img-right" src="images/settings-graphic.png" width="17" height="16" alt="">
+              <img src="images/refresh.png" width="14" height="16" alt="">
+              <img src="images/delete.png" width="14" height=15 alt="">
+            </div>
+            <div class="sales-title">
+              <span>Отдел продаж</span>
+              <span>Май 2017</span>
+              <div>
+                <input type="text" placeholder="Выбрать/добавить отдел">
+              </div>
+              <img src="images/stats-icon.png" width="23" height="21" alt="">
+              <img src="images/statistic.png" width="19" heioght="19" alt="">
+            </div>
+            <div id="salesStateChart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <img src="images/alliance.png" width="102px" height="28px" alt="">
+      <span>></span>
+      <span>ЗаШтатом</span>
+    </footer>
+  </div>
+</body>
+</html>

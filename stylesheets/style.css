@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  width: 250px;
+  height: 130px;
+  justify-content: center;
+}
